@@ -1,0 +1,49 @@
+.logo-font{
+    font-family: 'Dosis';
+}
+
+.header, .main, .footer {
+    padding-left: 250px;
+}
+            
+@media only screen and (max-width : 992px) {
+    .header, .main, .footer {
+        padding-left: 0;
+    }
+}
+
+@media only screen and (min-width : 992px) {
+    .brand-logo {
+        margin-left: 10px;
+    }
+}
+
+.logo-img{
+    padding-left: 61px;
+    padding-top: 10px;
+}
+
+.input-field label {
+    color: #37474f;
+}
+
+.input-field input[type=url]:focus + label,.input-field textarea:focus + label,.input-field input[type=email]:focus + label,.input-field input[type=text]:focus + label {
+    color: #37474f !important;
+}
+
+.input-field input[type=url]:focus,.input-field textarea:focus,.input-field input[type=email]:focus,.input-field input[type=text]:focus {
+    border-bottom: 1px solid #37474f !important;
+    box-shadow: 0 1px 0 0 #37474f !important;
+}
+
+.input-field .prefix.active {
+    color: #37474f;
+}
+
+textarea{
+    color: #263238 !important;
+}
+
+.promo-ico{
+    font-size: 5rem !important;
+}
