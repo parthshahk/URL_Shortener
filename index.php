@@ -1,37 +1,10 @@
-<?php
-    $this_app="URL_Shortener";
-	
-    $con=mysqli_connect("mysql.hostinger.in","u696737897_parth","`7w4]8io`aR8xu1AB1","u696737897_datab");
-    $current_info_obj=mysqli_query($con,"SELECT * FROM visitors WHERE Alias='$this_app'");
-    $current_info=mysqli_fetch_array($current_info_obj,MYSQLI_NUM);
-    $current_users=$current_info[0];
-    $current_views=$current_info[1];
-    $current_usersN=$current_info[3];
-    $current_viewsN=$current_info[4];
-	$current_users++;
-    $current_views++;
-    $current_usersN++;
-	$current_viewsN++;
-    mysqli_query($con,"UPDATE visitors SET Views=$current_views,ViewsN=$current_viewsN WHERE Alias='$this_app'");
-
-	if(!isset($_COOKIE['parthshahk_'.$this_app.'_visit'])){
-
-		setcookie('parthshahk_'.$this_app.'_visit', '1', time() + 2592000, "/");
-        mysqli_query($con,"UPDATE visitors SET Users=$current_users,UsersN=$current_usersN WHERE Alias='$this_app'");
-    }
-    $home='active';
-    $track='';
-    $about='';
-    $help='';
-    $title='Home';
-?>
-<?php include "./resources/includes/head.php" ?>
+<?php $title = "Homepage"; include "head.php"; ?>
 <div class="container">
     <div class="row center-align blue-grey-text text-darken-3">
         <div class="col s12">
             <h5>Measure your links with <span class="logo-font">URL Shortener</span>, a simple link tracking platform.</h5>
         </div>
-        <div class="col s12"><h6><a href="./about.php">What is <span class="logo-font">URL Shortener</span>?</a></h6></div>
+        <div class="col s12"><h6><a href="about.php">What is <span class="logo-font">URL Shortener</span>?</a></h6></div>
     </div>
     <div class="row"></div>
     <div class="row center-align blue-grey-text text-darken-3">
@@ -88,8 +61,8 @@
     <div class="row"></div>
     <div class="row center-align">
         <div class="col s12">
-            <h6><a href="./about.php">Learn More</a></h6>
+            <h6><a href="about.php">Learn More</a></h6>
         </div>
     </div>
 </div>
-<?php include "./resources/includes/foot.php" ?>
+<?php include "foot.php" ?>

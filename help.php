@@ -30,7 +30,7 @@
         
     }
 ?>
-<?php include "./resources/includes/head.php" ?>
+<?php include "head.php" ?>
 
 <div class="container">
     <div class="row">
@@ -65,7 +65,7 @@
         </div>
     </div>
 </div>
-<?php include "./resources/includes/foot.php" ?>
+<?php include "foot.php" ?>
 <script>
         <?php        
             if($msgSent) echo "Materialize.toast('Message Sent! Thank You', 4000);";

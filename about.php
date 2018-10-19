@@ -5,7 +5,7 @@
     $help='';
     $title='About';
 ?>
-<?php include "./resources/includes/head.php" ?>
+<?php include "head.php" ?>
 <div class="container">
     <div class="row">
         <div class="col s12 blue-grey-text text-darken-4">
@@ -54,4 +54,4 @@
         </div>
     </div>
 </div>
-<?php include "./resources/includes/foot.php" ?>
+<?php include "foot.php" ?>

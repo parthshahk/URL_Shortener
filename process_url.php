@@ -23,8 +23,8 @@
 
     mysqli_query($con,"UPDATE url_shortener_series SET alpha='$alpha', num=$num");
     
-    mkdir("../z/".$new_url_id);
-    $myfile = fopen("../z/".$new_url_id."/index.php", "w");
+    mkdir("./z/".$new_url_id);
+    $myfile = fopen("./z/".$new_url_id."/index.php", "w");
 
     $data="
     <?php 
@@ -54,6 +54,6 @@
 
     fclose($myfile);
 
-    echo "https://www.parthshah.xyz/z/".$new_url_id;
+    echo "https://www.parthshah.xyz/url-shortener/z/".$new_url_id;
 ?>
 

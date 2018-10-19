@@ -5,7 +5,7 @@
     $help='';
     $title='Track';
 ?>
-<?php include "./resources/includes/head.php" ?>
+<?php include "head.php" ?>
 
 <div class="container">
     <div class="row">
@@ -55,8 +55,8 @@
     <div class="row"></div>        
     <div class="row center-align">
         <div class="col s12">
-            <h6>Have Questions? <a href="./about.php">Learn More</a></h6>
+            <h6>Have Questions? <a href="about.php">Learn More</a></h6>
         </div>
     </div>
 </div>
-<?php include "./resources/includes/foot.php" ?>
+<?php include "foot.php" ?>
