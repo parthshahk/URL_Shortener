@@ -11,7 +11,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <?php include '../analytics.php'; ?>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-101233231-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-101233231-2');
+        </script>
         <title>URL Shortener | <?php echo $title; ?></title>
         <link rel="icon" type="image/png" href="logo.png"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
